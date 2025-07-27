@@ -1,0 +1,108 @@
+body {
+    background-color: var(--neutral-soft);
+    font-family: "Fraunces", serif;
+    /* font-family: "Montserrat", sans-serif; */
+
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-product {
+    max-width: 600px;
+    /* height: 450px; */
+    background-color: #FFFFFF;
+    display: flex;
+    border-radius: 10px;
+}
+
+.container-product .image .image-product {
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+}
+
+.container-info {
+    padding: 28px 32px;
+}
+
+.id-product {
+    font-family: "Montserrat", sans-serif;
+    text-transform: Uppercase;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: var(--neutral-medium);
+    font-weight: 500;
+}
+
+.title-product {
+    padding-top: 18px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 800;
+}
+
+.description-product {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 25px;
+    line-height: 23px;
+    color: var(--neutral-medium);
+}
+
+.container-price {
+    padding: 28px 0;
+}
+
+.price {
+    font-size: 31px;
+    font-weight: 800;
+    line-height: 35px;
+    /* letter-spacing: 1px; */
+    color: var(--primary-soft);
+    display: flex;
+    align-items: center;
+}
+
+.price-discount {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: normal;
+    color: var(--neutral-medium);
+    text-decoration: line-through;
+    padding-left: 20px;
+}
+
+.add-cart {
+    cursor: pointer;
+    width: 236px;
+    height: 48px;
+    border: 1px solid var(--primary-soft);
+    border-radius: 10px;
+    background-color: var(--primary-soft);
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-cart::before {
+    content: '';
+    background: url(../images/icon-cart.svg) no-repeat center;
+    width: 15px;
+    height: 20px;
+}
+
+.add-cart:hover {
+    background-color: var(--primary-medium);
+    transition: 0.3s ease-in-out;
+}
+
