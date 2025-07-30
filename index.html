@@ -20,8 +20,12 @@
 <section class="hero">
     <main class="container-product">
         <section class="image">
-            <img src="./src/images/image-product-desktop.jpg" alt="" class="image-product">
-            <img src="./src/images/image-product-mobile.jpg" alt="" class="image-product-mobile">
+            <picture class="image-product">
+                <source srcset="./src/images/image-product-desktop.jpg" media="(min-width: 600px)">
+                <img src="src/images/image-product-mobile.jpg" alt="Descrição da imagem" class="image-product-mobile">
+            </picture>
+            <!-- <img src="./src/images/image-product-desktop.jpg" alt="" class="image-product">
+            <img src="./src/images/image-product-mobile.jpg" alt="" class="image-product-mobile"> -->
         </section>
 
         <section class="info-product">

@@ -1,8 +1,11 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-color: var(--neutral-soft);
     font-family: "Fraunces", serif;
     /* font-family: "Montserrat", sans-serif; */
-
 }
 
 .hero {
@@ -13,56 +16,56 @@ body {
 }
 
 .container-product {
-    max-width: 600px;
-    /* height: 450px; */
+    /* border: 1px solid black; */
+    width: 60rem;
+    max-width: 100%;
     background-color: #FFFFFF;
     display: flex;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
-.container-product .image .image-product {
-    width: 300px;
-    border-radius: 10px 0 0 10px;
+.image-product img {
+    min-height: 100%;
 }
 
-.container-info {
-    padding: 28px 32px;
+.container-product .container-info {
+    padding: 2rem;
 }
 
 .id-product {
     font-family: "Montserrat", sans-serif;
     text-transform: Uppercase;
-    font-size: 12px;
-    letter-spacing: 5px;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
     color: var(--neutral-medium);
     font-weight: 500;
 }
 
 .title-product {
-    padding-top: 18px;
-    font-size: 32px;
-    line-height: 32px;
+    padding-top: 1.8rem;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
     font-weight: 800;
 }
 
 .description-product {
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
-    padding-top: 25px;
-    line-height: 23px;
+    padding-top: 2.5rem;
+    line-height: 2.3rem;
     color: var(--neutral-medium);
 }
 
 .container-price {
-    padding: 28px 0;
+    padding: 2.8rem 0;
 }
 
 .price {
-    font-size: 31px;
+    font-size: 3.1rem;
     font-weight: 800;
-    line-height: 35px;
-    /* letter-spacing: 1px; */
+    line-height: 3.5rem;
+    letter-spacing: 0.1rem;
     color: var(--primary-soft);
     display: flex;
     align-items: center;
@@ -70,35 +73,36 @@ body {
 
 .price-discount {
     font-family: "Montserrat", sans-serif;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 500;
     letter-spacing: normal;
     color: var(--neutral-medium);
     text-decoration: line-through;
-    padding-left: 20px;
+    padding-left: 2rem;
 }
 
 .add-cart {
     cursor: pointer;
-    width: 236px;
-    height: 48px;
-    border: 1px solid var(--primary-soft);
-    border-radius: 10px;
+    width: 23.6rem;
+    max-width: 100%;
+    height: 4.8rem;
+    border: 0.1rem solid var(--primary-soft);
+    border-radius: 1rem;
     background-color: var(--primary-soft);
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .add-cart::before {
     content: '';
     background: url(../images/icon-cart.svg) no-repeat center;
-    width: 15px;
-    height: 20px;
+    width: 1.5rem;
+    height: 2rem;
 }
 
 .add-cart:hover {
